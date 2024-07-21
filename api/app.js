@@ -22,6 +22,10 @@ app.get('/', (req, res) => {
   ])
 })
 
+app.get("/greeting",(req,res)=>{
+  res.send("Hello Docker")
+})
+
 app.listen(4000, () => {
   console.log('listening for requests on port 4000')
 })
